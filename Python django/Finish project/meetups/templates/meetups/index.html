@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<hyml lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equip="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <tittle>Робота виконана</tittle>
+  <link rel="stylesheet" href="{% static 'meetups/styles/base.css' %}">
+</head>
+<body>
+  <h1>Робота виконана!</h1>
+  <p>Hello World!</p>
+{% if Покажи повідомлення %}
+  <h2>{{ Повідомлення.0.title] }}</h2>
+  <p>{{meetup_item.tiitle }}</p>
+  {% endfor %}
+  {% else %}
+  <p>Нічого не знайдено!</p>
+  {% endif%}
+  </body>
+</hyml>
